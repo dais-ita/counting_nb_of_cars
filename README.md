@@ -11,17 +11,28 @@ The result of this project is the amount of cars that appear in each video.
 
 # Summary
 
+Pull docker image from:
+
+https://hub.docker.com/r/squintana/dl-docker/
+
 Download the full project from the following location:
 
 	https://drive.google.com/open?id=0B4RgtXiS2li0dGVVVUdXLXA2dE0
 
-Run main.py to obtain the results.
+Place the downloaded project in the docker sharedfolder (<local_folder>).
+
+Run docker image using the following command:
+
+nvidia-docker run -it -p 8888:8888 -v ~/<local_folder>:/root/sharedfolder squintana/dl-docker bash
+
+Run ~/sharedfolder/tools/main.py to obtain the results.
 	
 Videos are stored in tf-faster-rcnn-master/tools/videos_test1
 
 
 ### Requirements
 1. Python 2.7.x
-2. TensorFlow >= 0.12
-3. OpenCV 2.4.2
+2. TensorFlow == 1.0.1 
+3. OpenCV 3.3
+4. Cuda
 
