@@ -17,7 +17,7 @@ https://hub.docker.com/r/squintana/dl-docker/
 
 Download the full project from the following location:
 
-	https://drive.google.com/open?id=0B4RgtXiS2li0dGVVVUdXLXA2dE0
+	https://drive.google.com/open?id=0B4RgtXiS2li0QksxaUFpRWxBaEE
 
 Place the downloaded project in the docker sharedfolder (<local_folder>).
 
