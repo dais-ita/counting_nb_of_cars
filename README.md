@@ -36,3 +36,55 @@ Videos are stored in tf-faster-rcnn-master/tools/videos_test1
 3. OpenCV 3.3
 4. Cuda
 
+
+## ResNet model setup instructions:
+
+are:
+
+* You need first to pull the [TensorFlow models repo] (https://github.com/tensorflow/models) into your disk:
+```
+git clone https://github.com/tensorflow/models.git
+```
+* Then, compile the proto files there:
+```
+cd models
+protoc object_detection/protos/*.proto --python_out=.
+```
+
+
+* Finally, update the "car_counting_demo.py" line 26 with the correct path of the tensorflow models repo:
+```
+TF_MODELS_REPO_PATH = '/home/malzantot/Nesl/models'
+```
+
+* To run the demo on a given image:
+
+```
+python car_counting_demo.py --image_path=test_image.jpg 
+```
+The setup instructions:
+
+are:
+
+* You need first to pull the [TensorFlow models repo] (https://github.com/tensorflow/models) into your disk:
+```
+git clone https://github.com/tensorflow/models.git
+```
+* Then, compile the proto files there:
+```
+cd models
+protoc object_detection/protos/*.proto --python_out=.
+```
+
+
+* Finally, update the "car_counting_demo.py" line 26 with the correct path of the tensorflow models repo:
+```
+TF_MODELS_REPO_PATH = '/home/malzantot/Nesl/models'
+```
+
+* To run the demo on a given image:
+
+```
+python car_counting_demo.py --image_path=test_image.jpg 
+```
+
